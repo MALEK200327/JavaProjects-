@@ -8,7 +8,7 @@
 // Fix for error in javadoc SDN 30/8/16
 // Wait method added by SDN October 2018
 
-package sheffield;
+package uniProjects.sheffield;
 
 import java.awt.*;
 import java.awt.image.*;

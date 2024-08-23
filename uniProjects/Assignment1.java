@@ -1,7 +1,8 @@
+package uniProjects;
 
 
-import sheffield.EasyReader;
-import sheffield.EasyWriter;
+import uniProjects.sheffield.EasyReader;
+import uniProjects.sheffield.EasyWriter;
 
 public class Assignment1  {
 
