@@ -1,0 +1,7 @@
+Add class for shopping basket - belongs to a user ID, contains a list of products added
+
+
+Login - Read from database and check if exists
+Register - add to Database
+
+Setup database connection

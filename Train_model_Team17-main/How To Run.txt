@@ -1,0 +1,2 @@
+1) javac GUI/*.java
+2) java GUI.LoginForm

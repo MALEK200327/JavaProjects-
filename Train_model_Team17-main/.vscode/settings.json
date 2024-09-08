@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "COM2008 Group Project Code/mysql-connector-java-8.0.27(1).jar",
+        "COM2008 Group Project Code/bcrypt-0.10.2.jar",
+        "COM2008 Group Project Code/bytes-1.5.0.jar",
+        "COM2008 Group Project Code/jBCrypt-0.4.jar"
+    ]
+}
