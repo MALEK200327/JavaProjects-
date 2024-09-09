@@ -1,0 +1,17 @@
+import sheffield.*;
+public class Alchol {
+	public static void main ( String [] args) {
+		EasyWriter type = new EasyWriter();
+		EasyReader yourage = new EasyReader();
+		double age = yourage.readDouble(" Please enter your age ");
+		if ( age < 18 )
+			type.println(" can not drink alchol ");
+		else if ( age > 18 && age < 25)
+			type.println("need proof of their age");
+		else
+			type.println("you can drink but you will go to fire");
+	}
+}
+			
+			
+		

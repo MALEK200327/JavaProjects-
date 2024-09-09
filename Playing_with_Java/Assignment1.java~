@@ -1,0 +1,92 @@
+// I call the sheffield package by import 
+import sheffield.*;
+public class Assignment1 {
+	public static void main ( String [] args) {
+		// Now i declared a constant as 1pound = 0.453592kg 
+		final double PTOKG = 0.453592;
+		// I used the class EasyReader to create an input
+		EasyReader weight = new EasyReader();
+		//I used the class EasyReader  an input of a text file
+		EasyReader planets1 = new EasyReader("planets.txt");
+		//I used the class EasyWriter named it screen to print 
+		EasyWriter screen = new EasyWriter();
+		//i created a string called earth
+		String earth = "Earth ";
+		
+		//This reads the first line in the text file
+		String p1 = planets1.readString();
+		//This extract the name of the planet from the text file
+		String nameofplanet1 = p1.substring(0,p1.indexOf("'"));
+		/* what i will do in the next 3 lines is changing the word gravity with 
+		 the word Gravity so i can extract the number of gravity of the planet
+		 in the first line of the text file*/ 
+		String gravity1 = p1.substring(p1.indexOf("gravity"),p1.indexOf("is"));
+		String gravity2 = "Gravity";
+		String p1swap = p1.replace(gravity1,gravity2);
+		//extracting the number of gravity of the planet in the first line of file
+		String p1g = p1swap.substring(p1swap.indexOf("is")+2,p1swap.indexOf("g"));
+		
+			
+			
+		// This reads the second line in the text file
+		String p2 =planets1. readString();
+		//This extract the name of the planet from the text file
+		String nameofplanet2 = p2.substring(0,p2.indexOf("'"));
+		/* what i will do in the next 3 lines is changing the word gravity with 
+		 the word Gravity so i can extract the number of gravity of the planet
+		 in the second line of the text file*/ 
+		String gravity12 = p2.substring(p2.indexOf("gravity"),p2.indexOf("is"));
+		String gravity22 = "Gravity";
+		String p1swap2 = p2.replace(gravity12,gravity22);
+		//extracting the number of gravity of the planet in the second line of file
+		String p1g2 = p1swap2.substring(p1swap2.indexOf("is")+2,p1swap2.indexOf("g"));
+		
+		
+		// ask the user to enter their in pounds and should enter it in integer
+		int weight1 = weight.readInt("Please type in a weight in pounds : ");
+		// claculating the weight from pound to kg
+		double weightinkg3 = ((double)weight1*PTOKG);
+		// converting the value from string to be double first line in txt file
+		double p1todou = Double.valueOf(p1g);
+		//claculating the weight on this planet
+		double p1kg = p1todou*weight1*PTOKG;
+		// converting the value from string to be double second line in txt file
+		double p2todou = Double.valueOf(p1g2);
+		//claculating the weight on this planet
+		double p2kg = p2todou*weight1*PTOKG;
+		// to indent 20 character correctly
+		int q = earth.length();
+		int e = nameofplanet1.length(); 
+		int u = nameofplanet2.length(); 
+		// printing messages
+		screen.print("That is");
+		screen.print(" ");
+		// printing and making it to 3 decimal places 
+		screen.print(weightinkg3,3,0);
+		screen.print(" ");
+		screen.println(" kilograms ");
+		screen.println(" ");
+		screen.println(p1 );
+		screen.print(weight1);
+		screen.print(" pounds on "); 
+		screen.print(earth); 
+		screen.print(" weighs ");
+		// printing and making it to 4 decimal places
+		screen.print(weightinkg3,4,0);
+		screen.println(" kilograms ");
+		screen.print(weight1);
+		screen.print(" pounds on ");
+		screen.print( nameofplanet1 );
+		screen.print(" weighs ");
+		screen.print(p1kg,4,0);
+		screen.println(" kilograms ");
+		screen.println("");
+		screen.print(earth);
+		// printing and making it to 2 decimal places and indented 20 charcter
+		screen.println(weightinkg3,2,20-q);
+		screen.print(nameofplanet1);
+		screen.println(p1kg,2,20-e);
+		screen.print(nameofplanet2);
+		screen.println(p2kg,2,20-u);
+	}
+}

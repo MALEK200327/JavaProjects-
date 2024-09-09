@@ -1,0 +1,2 @@
+Jupiter's gravity is 2.53g
+Mercury's gravity is 0.38g

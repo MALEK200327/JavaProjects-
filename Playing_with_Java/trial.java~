@@ -1,0 +1,10 @@
+import sheffield.*;
+ public class trial{
+ 	 public static void main(String [] args){
+ 	 	 EasyReader fileInput = new EasyReader("planets.txt") :
+ 	 	 String a =fileInput. readString():
+ 	 	 String b = a. substring(3,4) :
+ 	 	 System.out.println(b):
+ 	 }
+ }
+ 	 	 
