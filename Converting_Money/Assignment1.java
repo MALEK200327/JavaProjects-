@@ -1,8 +1,8 @@
-package uniProjects;
+package Converting_Money;
 
 
-import uniProjects.sheffield.EasyReader;
-import uniProjects.sheffield.EasyWriter;
+import Converting_Money.sheffield.EasyReader;
+import Converting_Money.sheffield.EasyWriter;
 
 public class Assignment1  {
 

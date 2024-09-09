@@ -8,7 +8,7 @@
 // Fix for error in javadoc SDN 30/8/16
 // Wait method added by SDN October 2018
 
-package uniProjects.sheffield;
+package Converting_Money.sheffield;
 
 import java.awt.*;
 import java.awt.image.*;

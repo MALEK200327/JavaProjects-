@@ -20,7 +20,7 @@ public class Indent {
 		
 		//Confirm the program has worked
 		EasyWriter screen = new EasyWriter();
-		screen.println("The data has been written to the file" + yu);
+		screen.println("The data has been written to the file" + file);
 		
    	} 
 } 

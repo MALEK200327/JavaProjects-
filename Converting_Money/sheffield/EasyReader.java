@@ -10,7 +10,7 @@
 *     with static factory methods valueOf()
 */
 
-package uniProjects.sheffield;
+package Converting_Money.sheffield;
 
 import java.io.*;
 
